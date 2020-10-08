@@ -18,29 +18,36 @@
 
 ### What is this repository for? ###
 
-* Quick summary
-Because one organization can contain multiple legal entities and be involved in multiple crops, AgroTrust Interface provides a single connector API which resolves calls from application node. It translates requests into corresponding multichain APIs, directs them to the correct blockchain and returns a response.
+* Quick summary: Because one organization can contain multiple legal entities and be involved in multiple crops, AgroTrust Interface provides a single connector API which resolves calls from application node. It translates requests into corresponding multichain APIs, directs them to the correct blockchain and returns a response.
 
-* Version
-0.1.0
+* Version : 0.1.0
 
 
 ### How do I get set up? ###
 
 Below instructions assume Linux nodes and have been thoroughly tested on Ubuntu 18.04 LTS.
+These instructions define a testing setup with two dummy LEs and three crop blockchains.
 
 * Configuration
 1. network.json configuration file describes legal entities and crop blockchains each LE is involved in.
+
+Organization: Green Farms
+LEs: GFPCL and GRPL
+
+
 2. cropmap.json configuration file describes a mapping between blockchains and crops, following the principle of 'One Crop, One Blockchain'. When crops are closely related, they can be merged into a higher level in the botanical classification e.g. Cucurbits and Citrus. But a crop with large production, like Wheat or Cotton, should have a separate blockchain.
 
-* Set up instructions
+Crop Blockchains: agrotrust-citrus, agrotrust-leafy, agrotrust-cucurbits
+
+* Setup instructions
 1. Download Multichain 2.0 Community Edition binaries from the official site. Version: March 25, 2019 – Version 2.0 (release) for Linux and Windows. https://www.multichain.com/download-community/
-2. 
-
-
+2. Open terminal and run multichain-init.sh bash script. This script will launch three example crop blockchains, configure blockchain parameters and create required streams.
+3. multichaind blockchain processes are launched on TCP Ports from 6001 and RPC ports from 7001 onward
+4. cd into ~/.multichain directory it should show three folders named agrotrust-* for each blockchain. Copy agrotrust-*.cert certificate file from each folder into the ./ssl folder of this repository.
+5. Run node app.js launching AgroTrust Interface on TCP port 7000.
 
 * Dependencies
-* Deployment instructions
+Please refer to package.json
 
 ### Contribution guidelines ###
 
