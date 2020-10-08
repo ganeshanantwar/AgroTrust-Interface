@@ -5,7 +5,7 @@ const fs=require('fs');
 const path = require('path');
 
 /**
-For some crops:
+For specific crops:
 {
     "payload":["GFPCL",["C0000001","C0000002"],"getinfo",[]]
 }
