@@ -1,10 +1,40 @@
 {
-    "list":[
-        {"cropID":"c001","cropCommName":"Orange","blockchain":"agrotrust-citrus","activated":true},
-        {"cropID":"c002","cropCommName":"Mandarin","blockchain":"agrotrust-citrus","activated":true},
-        {"cropID":"c003","cropCommName":"Spinach","blockchain":"agrotrust-leafy","activated":true},
-        {"cropID":"c004","cropCommName":"Fenugreek","blockchain":"agrotrust-leafy","activated":true},
-        {"cropID":"c005","cropCommName":"Cucumber","blockchain":"agrotrust-cucurbits","activated":true},
-        {"cropID":"c006","cropCommName":"Bottle Gourd","blockchain":"agrotrust-cucurbits","activated":true}
-    ]
+	"cropmap": [
+		{
+			"cropID": "c001",
+			"cropName": "Orange",
+			"blockchain": "agrotrust-citrus",
+			"activated": true
+		},
+		{
+			"cropID": "c002",
+			"cropName": "Mandarin",
+			"blockchain": "agrotrust-citrus",
+			"activated": true
+		},
+		{
+			"cropID": "c003",
+			"cropName": "Spinach",
+			"blockchain": "agrotrust-leafy",
+			"activated": true
+		},
+		{
+			"cropID": "c004",
+			"cropName": "Fenugreek",
+			"blockchain": "agrotrust-leafy",
+			"activated": true
+		},
+		{
+			"cropID": "c005",
+			"cropName": "Cucumber",
+			"blockchain": "agrotrust-cucurbits",
+			"activated": true
+		},
+		{
+			"cropID": "c006",
+			"cropName": "Bottle Gourd",
+			"blockchain": "agrotrust-cucurbits",
+			"activated": true
+		}
+	]
 }

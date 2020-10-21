@@ -12,5 +12,5 @@ app.use(bodyParser.json());
 app.use('/',multichainRouter);
 
 app.listen(port, () => {
-    console.log(`Multichain Interface is running on ${port}`);
+    console.log(`AgroTrust Interface is running on ${port}`);
 });

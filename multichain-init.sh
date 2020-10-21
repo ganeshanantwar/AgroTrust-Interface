@@ -34,54 +34,68 @@ cp ~/.multichain/$i/$i.cert ~/AgroTrust_1.0/multichain-interface/ssl
 
 multichain-cli $i create stream idmap '{"restrict":"onchain,write"}'
 multichain-cli $i create stream farmer '{"restrict":"onchain,write"}'
+multichain-cli $i create stream farmer-hashmap '{"restrict":"onchain,write"}'
 multichain-cli $i create stream field '{"restrict":"onchain,write"}'
+multichain-cli $i create stream field-hashmap '{"restrict":"onchain,write"}'
 multichain-cli $i create stream plot '{"restrict":"onchain,write"}'
+multichain-cli $i create stream plot-hashmap '{"restrict":"onchain,write"}'
 multichain-cli $i create stream material '{"restrict":"onchain,write"}'
+multichain-cli $i create stream material-hashmap '{"restrict":"onchain,write"}'
 multichain-cli $i create stream sku '{"restrict":"onchain,write"}'
+multichain-cli $i create stream sku-hashmap '{"restrict":"onchain,write"}'
 multichain-cli $i create stream location '{"restrict":"onchain,write"}'
+multichain-cli $i create stream location-hashmap '{"restrict":"onchain,write"}'
 multichain-cli $i create stream btu '{"restrict":"onchain,write"}'
 multichain-cli $i create stream transfer '{"restrict":"onchain,write"}'
-multichain-cli $i create stream transform '{"restrict":"onchain,write"}'
 
 multichain-cli $i subscribe idmap
 multichain-cli $i subscribe farmer
+multichain-cli $i subscribe farmer-hashmap
 multichain-cli $i subscribe field
+multichain-cli $i subscribe field-hashmap
 multichain-cli $i subscribe plot
+multichain-cli $i subscribe plot-hashmap
 multichain-cli $i subscribe material
+multichain-cli $i subscribe material-hashmap
 multichain-cli $i subscribe sku
+multichain-cli $i subscribe sku-hashmap
 multichain-cli $i subscribe location
+multichain-cli $i subscribe location-hashmap
 multichain-cli $i subscribe btu
 multichain-cli $i subscribe transfer
-multichain-cli $i subscribe transform
 
 #FARMER Codes Range: 0xFA000001 to 0xFAFFFFFF
 multichain-cli $i publish idmap farmer fa000000 offchain
+multichain-cli $i publish farmer-hashmap fa000000 0000000000000000000000000000000000000000000000000000000000000000 offchain
 
 #FIELD Codes Range: 0xFE000001 to 0xFEFFFFFF
 multichain-cli $i publish idmap field fe000000 offchain
+multichain-cli $i publish field-hashmap fe000000 0000000000000000000000000000000000000000000000000000000000000000 offchain
 
 #PLOT Codes Range: 0xAA000001 to 0xAAFFFFFF
 multichain-cli $i publish idmap plot aa000000 offchain
+multichain-cli $i publish plot-hashmap aa000000 0000000000000000000000000000000000000000000000000000000000000000 offchain
 
 #LOCATION Codes Range: 0xAB000001 to 0xABFFFFFF
 multichain-cli $i publish idmap location ab000000 offchain
+multichain-cli $i publish location-hashmap ab000000 0000000000000000000000000000000000000000000000000000000000000000 offchain
 
 #MATERIAL Codes Range: 0xC0010001 to 0xCFFFFFFF
 #Where Crop IDs from C001 to CFFF
 #And Variety IDs from 0001 to FFFF
 multichain-cli $i publish idmap material c0000000 offchain
+multichain-cli $i publish material-hashmap c0000000 0000000000000000000000000000000000000000000000000000000000000000 offchain
 
 #SKU Codes Range: 0xEA000001 to 0xEAFFFFFF
 multichain-cli $i publish idmap sku ea000000 offchain
+multichain-cli $i publish sku-hashmap ea000000 0000000000000000000000000000000000000000000000000000000000000000 offchain
 
-#BTU Codes Range: 0x10000001 to 0x3FFFFFFF
+#BTU Codes Range: 0x10000001 to 0x4FFFFFFF
 multichain-cli $i publish idmap btu 10000000 offchain
 
-#Transfer Codes Range: 0x40000001 to 0x6FFFFFFF
+#Transfer Codes Range: 0x50000001 to 0x8FFFFFFF
 multichain-cli $i publish idmap transfer 40000000 offchain
 
-#Transform Codes Range: 0x70000001 to 0x9FFFFFFF
-multichain-cli $i publish idmap transform 70000000 offchain
 
 RPC=$((RPC+1))
 NETWORK=$((NETWORK+1))

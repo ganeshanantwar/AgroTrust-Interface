@@ -1,64 +1,63 @@
 {
-    "orgRefName": "greenfarms",
-    "orgFullName":"Green Farms",
-    "legalEntities": [
-        {
-            "refName": "GFPCL",
-            "fullName":"Green Farmers Producer Co. Ltd.",
-            "chains": [
-                {
-                    "blockchain": "agrotrust-citrus",
-                    "host": "127.0.0.1",
-                    "port": "7001",
-                    "rpcuser": "rpcuser-7001",
-                    "rpcpass": "rpcpass-7001",
-                    "cert": "agrotrust-citrus.cert",
-                    "fqdn": "agrotrust.io"
-                },
-                {
-                    "blockchain": "agrotrust-leafy",
-                    "host": "127.0.0.1",
-                    "port": "7002",
-                    "rpcuser": "rpcuser-7002",
-                    "rpcpass": "rpcpass-7002",
-                    "cert": "agrotrust-leafy.cert",
-                    "fqdn": "agrotrust.io"
-                },
-                {
-                    "blockchain": "agrotrust-cucurbits",
-                    "host": "127.0.0.1",
-                    "port": "7003",
-                    "rpcuser": "rpcuser-7003",
-                    "rpcpass": "rpcpass-7003",
-                    "cert": "agrotrust-cucurbits.cert",
-                    "fqdn": "agrotrust.io"
-                }
-                
-            ]
-        },
-        {
-            "name": "GRPL",
-            "desc": "Green Retail Pvt. Ltd.",
-            "chains": [
-                {
-                    "blockchain": "agrotrust-leafy",
-                    "host": "127.0.0.1",
-                    "port": "7002",
-                    "rpcuser": "rpcuser-7002",
-                    "rpcpass": "rpcpass-7002",
-                    "cert": "agrotrust-leafy.cert",
-                    "fqdn": "agrotrust.io"
-                },
-                {
-                    "blockchain": "agrotrust-cucurbits",
-                    "host": "127.0.0.1",
-                    "port": "7003",
-                    "rpcuser": "rpcuser-7003",
-                    "rpcpass": "rpcpass-7003",
-                    "cert": "agrotrust-cucurbits.cert",
-                    "fqdn": "agrotrust.io"
-                }
-            ]
-        }
-    ]
+	"orgCode": "greenfarms",
+	"orgName": "Green Farms",
+	"legalEntities": [
+		{
+			"LECode": "GFPCL",
+			"LEName": "Green Farmers Producer Co. Ltd.",
+			"chains": [
+				{
+					"blockchain": "agrotrust-citrus",
+					"host": "127.0.0.1",
+					"port": "7001",
+					"rpcuser": "rpcuser-7001",
+					"rpcpass": "rpcpass-7001",
+					"cert": "agrotrust-citrus.cert",
+					"fqdn": "agrotrust.io"
+				},
+				{
+					"blockchain": "agrotrust-leafy",
+					"host": "127.0.0.1",
+					"port": "7002",
+					"rpcuser": "rpcuser-7002",
+					"rpcpass": "rpcpass-7002",
+					"cert": "agrotrust-leafy.cert",
+					"fqdn": "agrotrust.io"
+				},
+				{
+					"blockchain": "agrotrust-cucurbits",
+					"host": "127.0.0.1",
+					"port": "7003",
+					"rpcuser": "rpcuser-7003",
+					"rpcpass": "rpcpass-7003",
+					"cert": "agrotrust-cucurbits.cert",
+					"fqdn": "agrotrust.io"
+				}
+			]
+		},
+		{
+			"LECode": "GRPL",
+			"LEName": "Green Retail Pvt. Ltd.",
+			"chains": [
+				{
+					"blockchain": "agrotrust-leafy",
+					"host": "127.0.0.1",
+					"port": "7002",
+					"rpcuser": "rpcuser-7002",
+					"rpcpass": "rpcpass-7002",
+					"cert": "agrotrust-leafy.cert",
+					"fqdn": "agrotrust.io"
+				},
+				{
+					"blockchain": "agrotrust-cucurbits",
+					"host": "127.0.0.1",
+					"port": "7003",
+					"rpcuser": "rpcuser-7003",
+					"rpcpass": "rpcpass-7003",
+					"cert": "agrotrust-cucurbits.cert",
+					"fqdn": "agrotrust.io"
+				}
+			]
+		}
+	]
 }
