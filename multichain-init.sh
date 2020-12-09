@@ -35,10 +35,8 @@ cp ~/.multichain/$i/$i.cert ~/AgroTrust_1.0/multichain-interface/ssl
 multichain-cli $i create stream idmap '{"restrict":"onchain,write"}'
 multichain-cli $i create stream farmer '{"restrict":"onchain,write"}'
 multichain-cli $i create stream farmer-hashmap '{"restrict":"onchain,write"}'
-multichain-cli $i create stream field '{"restrict":"onchain,write"}'
-multichain-cli $i create stream field-hashmap '{"restrict":"onchain,write"}'
-multichain-cli $i create stream plot '{"restrict":"onchain,write"}'
-multichain-cli $i create stream plot-hashmap '{"restrict":"onchain,write"}'
+multichain-cli $i create stream origin '{"restrict":"onchain,write"}'
+multichain-cli $i create stream origin-hashmap '{"restrict":"onchain,write"}'
 multichain-cli $i create stream material '{"restrict":"onchain,write"}'
 multichain-cli $i create stream material-hashmap '{"restrict":"onchain,write"}'
 multichain-cli $i create stream sku '{"restrict":"onchain,write"}'
@@ -51,10 +49,8 @@ multichain-cli $i create stream transfer '{"restrict":"onchain,write"}'
 multichain-cli $i subscribe idmap
 multichain-cli $i subscribe farmer
 multichain-cli $i subscribe farmer-hashmap
-multichain-cli $i subscribe field
-multichain-cli $i subscribe field-hashmap
-multichain-cli $i subscribe plot
-multichain-cli $i subscribe plot-hashmap
+multichain-cli $i subscribe origin
+multichain-cli $i subscribe origin-hashmap
 multichain-cli $i subscribe material
 multichain-cli $i subscribe material-hashmap
 multichain-cli $i subscribe sku
@@ -68,13 +64,9 @@ multichain-cli $i subscribe transfer
 multichain-cli $i publish idmap farmer fa000000 offchain
 multichain-cli $i publish farmer-hashmap fa000000 0000000000000000000000000000000000000000000000000000000000000000 offchain
 
-#FIELD Codes Range: 0xFE000001 to 0xFEFFFFFF
-multichain-cli $i publish idmap field fe000000 offchain
-multichain-cli $i publish field-hashmap fe000000 0000000000000000000000000000000000000000000000000000000000000000 offchain
-
-#PLOT Codes Range: 0xAA000001 to 0xAAFFFFFF
-multichain-cli $i publish idmap plot aa000000 offchain
-multichain-cli $i publish plot-hashmap aa000000 0000000000000000000000000000000000000000000000000000000000000000 offchain
+#ORIGIN Codes Range: 0xFE000001 to 0xFEFFFFFF
+multichain-cli $i publish idmap origin fe000000 offchain
+multichain-cli $i publish origin-hashmap fe000000 0000000000000000000000000000000000000000000000000000000000000000 offchain
 
 #LOCATION Codes Range: 0xAB000001 to 0xABFFFFFF
 multichain-cli $i publish idmap location ab000000 offchain
@@ -93,7 +85,7 @@ multichain-cli $i publish sku-hashmap ea000000 000000000000000000000000000000000
 #BTU Codes Range: 0x10000001 to 0x4FFFFFFF
 multichain-cli $i publish idmap btu 10000000 offchain
 
-#Transfer Codes Range: 0x50000001 to 0x8FFFFFFF
+#TRANSFER Codes Range: 0x50000001 to 0x8FFFFFFF
 multichain-cli $i publish idmap transfer 40000000 offchain
 
 
