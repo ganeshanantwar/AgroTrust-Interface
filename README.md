@@ -44,12 +44,12 @@ Crop Blockchains: agrotrust-citrus, agrotrust-leafy, agrotrust-cucurbits
 
 Use following commands to install Multichain Blockchain Runtime:
 
-su (enter root password)
-cd /tmp
-wget https://www.multichain.com/download/multichain-2.0-release.tar.gz
-tar -xvzf multichain-2.1.1.tar.gz
-cd multichain-2.1.1
-mv multichaind multichain-cli multichain-util /usr/local/bin
+-  su (enter root password)
+-  cd /tmp
+-  wget https://www.multichain.com/download/multichain-2.0-release.tar.gz
+-  tar -xvzf multichain-2.1.1.tar.gz
+-  cd multichain-2.1.1
+-  mv multichaind multichain-cli multichain-util /usr/local/bin
 
 2. Clone this repo at desired location
 3. Open terminal and run 'npm install'
